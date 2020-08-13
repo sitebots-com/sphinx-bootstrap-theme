@@ -1,10 +1,10 @@
 /*!
  * Bootstrap v3.4.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 Twitter, Inc.
+ * Copyright 2011-2020 Twitter, Inc.
  * Licensed under the MIT license
  */
 
-if (typeof (window.$jqTheme || window.jQuery) === 'undefined') {
+if (typeof jQuery === 'undefined') {
   throw new Error('Bootstrap\'s JavaScript requires jQuery')
 }
 
@@ -14,7 +14,7 @@ if (typeof (window.$jqTheme || window.jQuery) === 'undefined') {
   if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1) || (version[0] > 3)) {
     throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher, but lower than version 4')
   }
-}(window.$jqTheme || window.jQuery);
+}(jQuery);
 
 /* ========================================================================
  * Bootstrap: transition.js v3.4.1
@@ -74,7 +74,7 @@ if (typeof (window.$jqTheme || window.jQuery) === 'undefined') {
     }
   })
 
-}(window.$jqTheme || window.jQuery);
+}(jQuery);
 
 /* ========================================================================
  * Bootstrap: alert.js v3.4.1
@@ -170,7 +170,7 @@ if (typeof (window.$jqTheme || window.jQuery) === 'undefined') {
 
   $(document).on('click.bs.alert.data-api', dismiss, Alert.prototype.close)
 
-}(window.$jqTheme || window.jQuery);
+}(jQuery);
 
 /* ========================================================================
  * Bootstrap: button.js v3.4.1
@@ -296,7 +296,7 @@ if (typeof (window.$jqTheme || window.jQuery) === 'undefined') {
       $(e.target).closest('.btn').toggleClass('focus', /^focus(in)?$/.test(e.type))
     })
 
-}(window.$jqTheme || window.jQuery);
+}(jQuery);
 
 /* ========================================================================
  * Bootstrap: carousel.js v3.4.1
@@ -543,7 +543,7 @@ if (typeof (window.$jqTheme || window.jQuery) === 'undefined') {
     })
   })
 
-}(window.$jqTheme || window.jQuery);
+}(jQuery);
 
 /* ========================================================================
  * Bootstrap: collapse.js v3.4.1
@@ -756,7 +756,7 @@ if (typeof (window.$jqTheme || window.jQuery) === 'undefined') {
     Plugin.call($target, option)
   })
 
-}(window.$jqTheme || window.jQuery);
+}(jQuery);
 
 /* ========================================================================
  * Bootstrap: dropdown.js v3.4.1
@@ -922,7 +922,7 @@ if (typeof (window.$jqTheme || window.jQuery) === 'undefined') {
     .on('keydown.bs.dropdown.data-api', toggle, Dropdown.prototype.keydown)
     .on('keydown.bs.dropdown.data-api', '.dropdown-menu', Dropdown.prototype.keydown)
 
-}(window.$jqTheme || window.jQuery);
+}(jQuery);
 
 /* ========================================================================
  * Bootstrap: modal.js v3.4.1
@@ -1281,7 +1281,7 @@ if (typeof (window.$jqTheme || window.jQuery) === 'undefined') {
     Plugin.call($target, option, this)
   })
 
-}(window.$jqTheme || window.jQuery);
+}(jQuery);
 
 /* ========================================================================
  * Bootstrap: tooltip.js v3.4.1
@@ -1959,7 +1959,7 @@ if (typeof (window.$jqTheme || window.jQuery) === 'undefined') {
     return this
   }
 
-}(window.$jqTheme || window.jQuery);
+}(jQuery);
 
 /* ========================================================================
  * Bootstrap: popover.js v3.4.1
@@ -2083,7 +2083,7 @@ if (typeof (window.$jqTheme || window.jQuery) === 'undefined') {
     return this
   }
 
-}(window.$jqTheme || window.jQuery);
+}(jQuery);
 
 /* ========================================================================
  * Bootstrap: scrollspy.js v3.4.1
@@ -2256,7 +2256,7 @@ if (typeof (window.$jqTheme || window.jQuery) === 'undefined') {
     })
   })
 
-}(window.$jqTheme || window.jQuery);
+}(jQuery);
 
 /* ========================================================================
  * Bootstrap: tab.js v3.4.1
@@ -2412,7 +2412,7 @@ if (typeof (window.$jqTheme || window.jQuery) === 'undefined') {
     .on('click.bs.tab.data-api', '[data-toggle="tab"]', clickHandler)
     .on('click.bs.tab.data-api', '[data-toggle="pill"]', clickHandler)
 
-}(window.$jqTheme || window.jQuery);
+}(jQuery);
 
 /* ========================================================================
  * Bootstrap: affix.js v3.4.1
@@ -2577,4 +2577,4 @@ if (typeof (window.$jqTheme || window.jQuery) === 'undefined') {
     })
   })
 
-}(window.$jqTheme || window.jQuery);
+}(jQuery);
